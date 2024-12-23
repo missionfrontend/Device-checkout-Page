@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <!-- Leaflet -->
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+
+  <title>Device Shop Checkout | devChallenges.io</title>
+  <link rel="stylesheet" href="style.css">
+  <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    .author-info {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      color: rgb(55, 65, 81);
+    }
+
+    .author-info a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="checkout">
+    <div class="checkout_container">
+      <h2 class="checkout_header">Checkout</h2>
+      <label for="" class="checkout_label">3 ITEMS</label>
+    </div>
+
+    <!-- Checkout-tab -->
+    <div class="checkout_tab">
+      <!-- Items container -->
+      <div class="items_container">
+        <!-- Left-container -->
+        <div class="items_left--container">
+          <!-- item--1 -->
+          <div class="items item--1">
+            <div class="item-left">
+              <div class="item-left-description">
+                <img src="resources/Gold.png" alt="" srcset="" class="items-img">
+                <div class="items-description">
+                  <div class="items-description--main">
+                    <h2>iPhone 12 Pro</h2>
+                    <h4>Golden</h4>
+                  </div>
+
+                  <div>
+                    <a href="" class="decrease_quantity--1" data-type="1">-</a>
+                    <label for="" class="items-description--quant--1">1</label>
+                   <a href="" class="increase_quantity--1" data-type="1">+</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="items-description--right">
+                <div class="item--value" data-type="1">999</div>
+                <label for="" class="items-description--btn">X</label>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <!-- item--2 -->
+          <div class="items item--2">
+            <div class="item-left">
+              <div class="item-left-description">
+                <img src="resources/Apple-watch.png" alt="" srcset="" class="items-img">
+                <div class="items-description">
+                  <div class="items-description--main">
+                    <h2>iApple Watch</h2>
+                    <h4>Blue</h4>
+                  </div>
+
+                  <div>
+                    <a href="" class="decrease_quantity--1" data-type="2">-</a>
+                    <label for="" class="items-description--quant--2">1</label>
+                   <a href="" class="increase_quantity--1" data-type="2">+</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="items-description--right">
+                <div class="item--value">399</div>
+                <label for="" class="items-description--btn">X</label>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- item--3 -->
+          <div class="items item--3">
+            <div class="item-left">
+              <div class="item-left-description">
+                <img src="resources/iMac.png" alt="" srcset="" class="items-img">
+                <div class="items-description">
+                  <div class="items-description--main">
+                    <h2>iPhone 12 Pro</h2>
+                    <h4>Golden</h4>
+                  </div>
+
+                  <label for="" class="items-description--quant">1</label>
+                </div>
+              </div>
+
+              <div class="items-description--right">
+                <div class="item--value">1199</div>
+                <label for="" class="items-description--btn">X</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mid-border"></div>
+          <!-- Coupon Container -->
+          <div class="coupon-container">
+            <input type="text" class="coupon-input">
+            <a href="" class="coupon-btn">Apply Coupon</a>
+          </div>
+
+          <div class="product_total">
+            <!-- sub-total -->
+            <div class="sub_total">
+              <label for="" class="sub_total--label">Sub Total</label>
+              <label for="" class="sub_total--value value">1122</label>
+            </div>
+            <!-- Tax -->
+            <div class="tax">
+              <label for="" class="tax--label">Tax</label>
+              <label for="" class="tax--value value">1111</label>
+            </div>
+            <!-- Total -->
+            <div class="total">
+              <label for="" class="total--label">Total</label>
+              <label for="" class="total--value value">5555</label>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+        <!-- product-total -->
+
+
+        <!-- Right-container -->
+        <div class="items_right--container">
+          <div class="items-right--header">
+            <h4>Contact Information</h4>
+          </div>
+          <!-- Contact-information -->
+          <div class="contact_information">
+            <form action="" class="information_form">
+              <!-- Name-information -->
+              <div class="information_name information">
+                <label for="" class="name_label">First & Last Name</label>
+                <input type="text" class="name_input" placeholder="Enter first & last name">
+              </div>
+              <!-- Email-information -->
+              <div class="information_email information">
+                <label for="" class="email_label">Email Address</label>
+                <input type="text" class="email_input" placeholder="Enter email address">
+              </div>
+
+
+              <div class="country_postal--code">
+
+                <!-- Country code -->
+                <div class="information_country information ">
+                  <label for="" class="email_label">Select Country</label>
+                  <select name="countries" id="country_list">
+                    <option value="India">India</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United State of America">United States of America</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea">Korea</option>
+
+                  </select>
+                </div>
+
+                <!-- Postal code -->
+                <div class="information_code information">
+                  <label for="" class="code_label">Country Code</label>
+                  <input type="text" class="postalcode_input" placeholder="Enter Country code">
+                </div>
+              </div>
+             <!-- Continue -btn -->
+              <div class="btn">
+                 
+                 <a href="" class="continue_btn">Continue</a>
+              </div>
+
+              <div id="map"></div>
+
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <div class="author-info">
+    Coded by <a href="#">Your Name Here</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
